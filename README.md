@@ -61,3 +61,52 @@ T5/
 ├── relatorio_alongamento.png
 ├── .gitignore
 └── README.md
+
+## ⚙️ Como Executar Localmente
+
+Para executar o projeto, é necessário ter Python instalado, uma webcam disponível e conexão com a internet na primeira execução, caso o modelo do MediaPipe ainda não esteja presente na pasta.
+
+1. **Clonar o repositório:**
+   ```bash
+   git clone https://github.com/andersoncarvalhal-eng/Alongamento.git
+   ```
+
+2. **Acessar a pasta do projeto e criar um ambiente virtual:**
+   ```bash
+   cd Alongamento
+   python -m venv .venv
+   .venv\Scripts\activate
+   ```
+   *(No Linux ou macOS, use `source .venv/bin/activate` para ativar o ambiente virtual.)*
+
+3. **Instalar as dependências:**
+   ```bash
+   python -m pip install --upgrade pip
+   python -m pip install opencv-python mediapipe numpy matplotlib
+   ```
+
+4. **Executar a aplicação:**
+   ```bash
+   python main.py
+   ```
+   *Na primeira execução, se o arquivo `pose_landmarker_full.task` não estiver na pasta do projeto, o programa tentará baixá-lo automaticamente.*
+
+## 🎮 Controles da Aplicação
+
+Durante a execução, os comandos abaixo podem ser utilizados na janela da webcam:
+
+| Tecla | Ação |
+| :--- | :--- |
+| `C` | Alterna entre as câmeras disponíveis. |
+| `N` | Pula o exercício atual. |
+| `R` | Reinicia a avaliação e os indicadores da sessão. |
+| `Q` | Encerra a aplicação e apresenta o resumo e o gráfico final. |
+
+A aplicação tenta abrir inicialmente as câmeras nos índices 1 e 2 e, como alternativa, utiliza o índice 0. A disponibilidade depende das câmeras conectadas ao computador.
+
+
+---
+
+<p align="center">
+  Desenvolvido para a disciplina de <strong>Processamento Digital de Imagens (PDI)</strong> --- Projeto T5.
+</p>
