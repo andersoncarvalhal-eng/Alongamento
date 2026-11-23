@@ -61,6 +61,7 @@ T5/
 ├── relatorio_alongamento.png
 ├── .gitignore
 └── README.md
+```
 
 ## ⚙️ Como Executar Localmente
 
