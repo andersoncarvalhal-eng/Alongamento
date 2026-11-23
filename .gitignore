@@ -19,6 +19,7 @@ build/
 .env
 .env.*
 !.env.example
+.idea
 
 # VS Code (mantenha se quiser compartilhar configuracoes do time)
 .vscode/*
