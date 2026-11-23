@@ -1,0 +1,32 @@
+# Ambientes virtuais Python
+.venv/
+venv/
+env/
+ENV/
+.conda/
+
+# Bytecode, cache e build do Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.ruff_cache/
+
+# Variaveis de ambiente e segredos
+.env
+.env.*
+!.env.example
+
+# VS Code (mantenha se quiser compartilhar configuracoes do time)
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# Arquivos temporarios e do sistema Windows
+Thumbs.db
+Desktop.ini
+*.log
+*.tmp
